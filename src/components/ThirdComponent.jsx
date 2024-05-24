@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
 
 export const ThirdComponent = ({card}) => {
     console.log(card);
@@ -11,4 +12,8 @@ export const ThirdComponent = ({card}) => {
         <p>Alergias: {card.allergies}</p>
     </div>
   )
+}
+
+ThirdComponent.propTypes = {
+  card: PropTypes.object
 }
